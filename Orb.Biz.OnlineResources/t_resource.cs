@@ -10,7 +10,7 @@ namespace Orb.Biz.OnlineResources
 	[Table(Name = "dbo.orb")]
 	public class t_resource
 	{
-		[Column(DbType = "Int NOT NULL", IsPrimaryKey = true, Storage = "id", CanBeNull = false)]
+		[Column(AutoSync = AutoSync.OnInsert, DbType = "Int NOT NULL IDENTITY", IsDbGenerated = true, IsPrimaryKey = true, Storage = "Id")]
 		public int Id { get; set; }
 
 		[Column(DbType = "NVarChar(255)", CanBeNull = true, Storage = "st")]
