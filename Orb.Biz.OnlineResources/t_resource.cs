@@ -17,7 +17,6 @@ namespace Orb.Biz.OnlineResources
 		public string st { get; set; }
 		
 		[Column(DbType = "NVarChar(255)", CanBeNull = true, Storage = "county")]
-		
 		public string county { get; set; }
 		
 		[Column(DbType = "bit", CanBeNull = true, Storage = "ins")]
